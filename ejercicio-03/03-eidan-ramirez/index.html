@@ -1,0 +1,34 @@
+<script>
+    let sabores = ["mango", "sandía", "melón"];
+
+    function contarSabores() {
+        alert("Cantidad de sabores: " + sabores.length);
+    }
+
+    function mostrarSabores() {
+        alert("Sabores: " + sabores.join(", "));
+    }
+
+    function agregarSabor(sabor) {
+        sabores.push(sabor);
+        alert("Sabor " + sabor + " agregado");
+    }
+
+    function saludar(nombre) {
+        alert("¡Hola " + nombre + ", bienvenido a Git!");
+    }
+
+    function main() {
+        let nombre = prompt("Por favor, introduce tu nombre:");
+        saludar(nombre);
+        mostrarSabores();
+        let nuevoSabor = prompt("Introduce un nuevo sabor:");
+        agregarSabor(nuevoSabor);
+        contarSabores();
+        mostrarSabores();
+        let otroNuevoSabor = prompt("Introduce otro nuevo sabor:");
+        agregarSabor(otroNuevoSabor);
+        contarSabores();
+    }
+    main();
+</script>
